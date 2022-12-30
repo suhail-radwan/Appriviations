@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20vh;
+}
+.left {
+  background-color: #f2f2f2;
+  padding-top: 12vh;
+}
+.right {
+  background: linear-gradient(to bottom, #f1b1d785 0%, #8f8fec86 100%);
+  padding-top: 20vh;
+}
+
+.input,
+.text {
+  width: 70%;
+  height: 300px;
+  background-color: #fff;
+  border: none;
+  padding: 15px;
+  outline: none;
+}
+
+.btns {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.serach_btn {
+  padding: 15px;
+  width: 200px !important;
+}
+:host ::ng-deep .result_btns,
+:host ::ng-deep .swap {
+  :hover {
+    outline: none;
+    color: #000;
+    background: linear-gradient(to bottom, #f1b1d785 0%, #8f8fec86 100%);
+  }
+}
+
+:host ::ng-deep .result_btns button,
+:host ::ng-deep .swap button {
+  background-color: #f2f2f2;
+  border: none;
+  color: #000;
+}
+
+:host ::ng-deep .left .serach_btn button {
+  padding: 15px;
+  width: 200px !important;
+}
+:host ::ng-deep .swap button {
+  margin-bottom: 20px;
+  background: linear-gradient(to bottom, #f1b1d785 0%, #8f8fec86 100%);
+  outline: none;
+}
